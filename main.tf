@@ -2,7 +2,7 @@ module "eks" {
   # eks 모듈에서 사용할 변수 정의
   source = "./modules/eks-cluster"
   cluster_name = "fast-cluster"
-  cluster_version = "1.24"
+  cluster_version = "1.25"
   vpc_id = "vpc-08bef951d113f4b06"
 
   private_subnets = ["subnet-0944e736a028dcbfe", "subnet-01b87077945b67eb2"]
